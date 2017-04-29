@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM dclong/tdodbc
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \

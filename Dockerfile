@@ -1,7 +1,9 @@
 FROM dclong/tdodbc
 
 RUN yum update -y \
-    && yum install -y \
+    && yum install -y epel-release 
+
+RUN yum install -y \
         sudo \
         gcc gcc-c++ \
         python34 python34-devel python34-pip \

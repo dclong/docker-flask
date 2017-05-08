@@ -6,6 +6,7 @@ RUN yum update -y \
 RUN yum install -y \
         sudo \
         gcc gcc-c++ \
+        vim-enhanced git \
         python34 python34-devel python34-pip \
         openssl-devel \
     && yum clean all 

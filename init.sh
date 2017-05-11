@@ -11,11 +11,6 @@ useradd -om -u $USER_ID -g docker -d $HOME -s /bin/bash -c "$USER" $USER
 echo ${USER}:${PASSWORD} | chpasswd
 gpasswd -a $USER sudo
 
-if [[ ! -d /jupyter ]]; then
-    mkdir /jupyter
-    chown $USER:docker /jupyter
-fi
-
 su -m $USER && echo $PASSWORD | sudo -S -u $USER ${1:-/script.sh}
 # if [[ "$#" == 0 ]]; then
     # su -m $USER && echo $PASSWORD | sudo -S -u $USER /script.sh

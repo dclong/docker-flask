@@ -1,3 +1,3 @@
-#!/bin/bash
+#!/usr/bin/env sh
 
-tail -f /dev/null
+python3 /flask/app.py 

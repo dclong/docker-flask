@@ -11,6 +11,11 @@ useradd -om -u $USER_ID -g docker -d $HOME -s /bin/bash -c "$USER" $USER
 echo ${USER}:${PASSWORD} | chpasswd
 gpasswd -a $USER sudo
 
+if [[ ! -d /flask ]]; then
+    mkdir /flask
+    chown $USER:docker /flask
+fi
+
 su -m $USER && echo $PASSWORD | sudo -S -u $USER ${1:-/script.sh}
 # if [[ "$#" == 0 ]]; then
     # su -m $USER && echo $PASSWORD | sudo -S -u $USER /script.sh

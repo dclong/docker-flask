@@ -1,6 +1,6 @@
 # dclong/flask
 
-Flask in Docker. 
+Flask with packages pyodbc, teradata (based on Teradata ODBC) in Docker. 
 
 ## About the Author
 
@@ -14,7 +14,7 @@ docker run -d -p 5000:5000 \
     -e DOCKER_USER_ID=`id -u` \
     -e DOCKER_PASSWORD=`id -un` \
     -v $HOME:/wwwroot \
-    dclong/flask
+    dclong/flask:tdodbc
 ```
 
 ```
@@ -22,5 +22,5 @@ docker run -d -p 5000:5000 \
     -e DOCKER_USER=`id -un` \
     -e DOCKER_USER_ID=`id -u` \
     -v $HOME:/wwwroot \
-    dclong/flask
+    dclong/flask:tdodbc
 ```

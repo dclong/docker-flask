@@ -1,15 +1,4 @@
-FROM dclong/tdodbc
-
-RUN yum update -y \
-    && yum install -y epel-release 
-
-RUN yum install -y \
-        sudo \
-        gcc gcc-c++ \
-        vim-enhanced git \
-        python34 python34-devel python34-pip \
-        openssl-devel \
-    && yum clean all 
+FROM dclong/python3:centos
 
 RUN pip3 install \
         Flask \

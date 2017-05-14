@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t dclong/flask:tdodbc .
+docker build -t dclong/flask:centos .

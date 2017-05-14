@@ -2,7 +2,8 @@ FROM dclong/python3:centos
 
 RUN pip3 install \
         Flask \
-        Flask-Bootstrap 
+        Flask-Bootstrap \
+        pandas 
 
 EXPOSE 80
 EXPOSE 5000

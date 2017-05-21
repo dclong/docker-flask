@@ -1,4 +1,4 @@
-FROM dclong/python3
+FROM dclong/python
 
 RUN pip3 install \
         Flask \

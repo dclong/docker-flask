@@ -1,4 +1,4 @@
-FROM dclong/python3:centos
+FROM dclong/python:centos
 
 RUN pip3 install \
         Flask \

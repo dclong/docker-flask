@@ -10,4 +10,4 @@ EXPOSE 5000
 
 ADD script.sh /
 
-ENTRYPOINT ["/init.sh"]
+ENTRYPOINT ["/scripts/sys/init.sh"]

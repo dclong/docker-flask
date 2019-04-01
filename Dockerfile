@@ -5,6 +5,8 @@ RUN pip3 install \
         Flask-Bootstrap \
         pandas
 
+COPY scripts /scripts
+
 EXPOSE 80
 EXPOSE 5000
 

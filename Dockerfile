@@ -8,6 +8,4 @@ RUN pip3 install \
 EXPOSE 80
 EXPOSE 5000
 
-ADD script.sh /
-
 ENTRYPOINT ["/scripts/sys/init.sh"]
